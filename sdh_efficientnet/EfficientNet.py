@@ -1,6 +1,5 @@
 from typing import Union
 
-import cv2
 from torch.types import (_int, _device)
 from sdh_efficientnet.models.efficientnet_model import EfnModelLevel
 from torch.utils.data import Dataset, DataLoader
@@ -17,9 +16,6 @@ import copy
 import random
 from sklearn.model_selection import train_test_split
 from torch.utils.data import Subset
-import os
-from PIL import Image
-from glob import glob
 
 
 class EfNet:
