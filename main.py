@@ -1,5 +1,3 @@
-import torchvision.utils
-
 from sdh_efficientnet.EfficientNet import EfNet
 
 class_names = {
