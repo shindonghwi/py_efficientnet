@@ -30,7 +30,7 @@ class EfNet:
     __scheduler: optim.lr_scheduler.ReduceLROnPlateau
     __trainDataTransform: transforms.Compose
     __testDataTransform: transforms.Compose
-    __batchSize: int = 8
+    __batchSize: int = 16
     __randomSeed: int = 555
 
     def builder(self, level: EfnModelLevel, class_names):
