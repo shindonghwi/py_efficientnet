@@ -17,13 +17,6 @@ if __name__ == '__main__':
         trainDataPath="./frame/data"
     )
 
-    # 학습 시작
-    instance.train_model(
-        data_loaders=data_loaders,
-        saved_model_path='./saved_model',
-        num_epochs=100
-    )
-
     # # train check
     # num_show_img = 5
     # inputs, classes = next(iter(data_loaders['train']))
@@ -37,6 +30,13 @@ if __name__ == '__main__':
     # inputs, classes = next(iter(data_loaders['test']))
     # out = torchvision.utils.make_grid(inputs[:num_show_img])  # batch의 이미지를 오려부친다
     # instance.imshow(out, title=[class_names[str(int(x))] for x in classes[:num_show_img]])
+
+    # 학습 시작
+    instance.train_model(
+        data_loaders=data_loaders,
+        saved_model_path='./saved_model',
+        num_epochs=100
+    )
 
     """ 테스트 """
     # test_dataloader, test_batch_num = instance.create_test_dataset(
